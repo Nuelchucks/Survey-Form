@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+
+        body {
+            background-image: url(./image/james-padolsey-tvPvROBv0F4-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container {
+            position: relative;
+            width: 39%;
+            margin-top: 2%;
+            margin-left: 30%;
+            padding: 30px 29px;
+            border-radius: 8px;
+            background-color: #111133;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #input1 {
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            width: 500px;
+            height: 29px;
+            margin: 1.5% 0;
+
+        }
+        #input1:focus {
+            padding-left: 2%;
+        }
+        /*first select option*/
+        .option1 {
+            width: 500px;
+            height: 29px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            padding-left: 2%;
+        }
+         /*second select option*/
+        .option2 {
+            width: 500px;
+            height: 29px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            padding-left: 2%;
+        }
+        textarea {
+            width: 500px;
+            height: 100px;
+            outline: none;
+        }
+        textarea:focus {
+            padding-left: 2%;
+        }
+        ::placeholder {
+            padding-left: 2%;
+            font-size: 15px;
+        }
+        button {
+            display: block;
+            width: 500px;
+            margin-top: 4%;
+            padding: 10px 0;
+            height: 35px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            background-color: rgb(17, 192, 17);
+            color: white;
+            font-size: 17px;
+       }
+
+         /*For the heading*/
+
+        h1 {
+            color: white;
+            margin-bottom: 2%;
+            
+        }
+        .thanks {
+            margin-top: 1%;
+            font-weight: lighter;
+            font-size: 20px;
+            font-style: italic;
+        
+        }
+        .cap {
+            color: greenyellow;
+            display: inline;
+        }
+
+        p {
+            font-weight: 600;
+        }
+        .p {
+            font-weight: lighter;
+            display: inline;
+        }
+       #check1 {
+        display: block;
+       }
+       span {
+        display: block;
+        font-weight: 600;
+    
+       }
+       #radio1 {
+        display: block;
+       }
+
+       @media (max-width: 575px){
+        .container {
+            width: 250px;
+            margin: 0 auto;
+        }
+        #input1 {
+            width: 100%;
+        }
+        .option1, .option2 {
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+       button {
+        width: 100%;
+       }
+
+    }
+
+       @media (max-width: 768px) and
+       (min-width: 767px){
+
+        #input1 {
+            width: 100%;
+        }
+        .option1, .option2 {
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+       button {
+        width: 100%;
+       }
+
+       }
+
+       @media (max-width: 1024px) and
+       (min-width: 1023px){
+
+        #input1 {
+            width: 100%;
+        }
+        .option1, .option2 {
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+       button {
+        width: 100%;
+       }
+
+       }
+
+       @media (max-width: 1440px) and
+       (min-width: 1439px){
+
+        #input1 {
+            width: 100%;
+        }
+        .option1, .option2 {
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+       button {
+        width: 100%;
+       }
+
+       }
+      
+       @media (max-width: 2560px) and
+       (min-width: 2559px){
+
+        #input1 {
+            width: 100%;
+        }
+        .option1, .option2 {
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+       button {
+        width: 100%;
+       }
+
+       }
+    </style>
+</head>
+<body>
+    <center>
+    <h1><span class="cap"> CapacityBay</span> Survey Form
+    <span class="thanks">Thank you for taking the time to help us improve the platform</span> </h1></center>
+    <div class="container">
+        <form action="mailto: mikkystorm@gmail.com">
+            <label> <span>Name</span> <input type="text" name="first-name" placeholder="Enter name" id="input1" required /></label> <br> <br>
+            <label> <span>Email</span><input type="email" name="last-name" placeholder="Enter email" id="input1" required /></label> <br> <br>
+            <label> <span>Age</span> <input type="number" name="email" placeholder="Age" id="input1" required /></label> <br>
+
+            <label>
+                <p>Which option best describes your current role?</p>
+                <select class="option1" required>
+                    <option>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="Full-time job">Full time job</option>
+                    <option value="Full-time learner">Full time learner</option>
+                    <option value="Hmmm">Prefer not to say</option>
+                    <option value="Others">Others</option>
+                </select>
+            </label> <br> <br>
+
+            <p>Would you recommend Capacity Bay to a friend?</p>
+            <div class="rec">
+            <label id="radio1"><input type="radio" name="Recommend" class="radio" /> Definitely</label>
+            <label id="radio1"><input type="radio" name="Recommend" class="radio" /> Maybe</label>
+            <label id="radio1"><input type="radio" name="Recommend" class="radio" /> Not so sure</label>
+            </div> <br>
+
+            <label>
+                <p>What is your favorite feature of Capacity Bay?</p>
+                <select class="option2">
+                    <option>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="Projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="opensource">Open Source</option>
+                </select>
+            </label> <br> <br>
+
+            <p>What would you like to see improved? <span class="p"> (check all that apply)</span></p>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Front-end Projects
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Back-end Projects
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Data visualization
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Challenges
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Open-source Community
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Glitter help rooms
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Videos
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> City meetups
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Wiki
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Forum
+            </label>
+            <label id="check1">
+                <input type="checkbox" name="terms" class="check" required /> Additional course
+            </label> <br>
+                
+        <label class="comments">
+            <p>Any comments or suggestions?</p>
+            <textarea placeholder="Enter your comment here..." ></textarea>
+        </label>
+
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
